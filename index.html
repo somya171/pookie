@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pookie Appreciation ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+<style>
+h1 {
+  font-size: 50px;   /* make bigger */
+  font-family: "Brush Script MT", cursive;
+}
+
+body {
+  background-color: #ffe4ec !important;
+  font-family: "Brush Script MT", cursive !important;
+}
+</style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <button onclick="showSection('home')">❤️</button>
+    <button onclick="showSection('letter')">✉️</button>
+    <button onclick="showSection('music')">🎶</button>
+    <button onclick="showSection('photos')">📸</button>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="section active">
+  <div class="envelope-container">
+
+    <div class="envelope">
+
+      <!-- flap -->
+      <div class="flap"></div>
+
+      <!-- lace edges -->
+      <div class="lace-strip left"></div>
+      <div class="lace-strip right"></div>
+
+
+      <!-- velvet bow -->
+      <div class="velvet-bow" onclick="openEnvelope()">
+        <div class="bow-loop left"></div>
+        <div class="bow-knot"></div>
+        <div class="bow-loop right"></div>
+        <div class="bow-tail left"></div>
+        <div class="bow-tail right"></div>
+      </div>
+
+      <!-- Letter -->
+      <div class="letter-paper">
+        <h1>Hiii 💗</h1>
+        <p>For you my Honeyy Bunny</p>
+        <button class="main-btn" onclick="showSection('letter')">
+          Open letter →
+        </button>
+        <img src="./images/catt.jpeg" class="preview-image" alt="Our memory">
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+    <!-- Letter inside -->
+    <div class="letter-paper">
+      <h1>Hi love 💗</h1>
+      <p>For you my Honey Bunny</p>
+      <button class="main-btn" onclick="showSection('letter')">
+        Open letter →
+      </button>
+    </div>
+
+  </div>
+
+
+</div>
+
+</section>
+<!--Letter content-->
+
+<!-- Letter -->
+ <section id="letter" class="section">
+  <div class="letter-wrapper">
+
+    <div class="letter-card">
+      <div class="letter-left">
+        <img src="./images/cat_flower.jpeg" alt="memory">
+        <div class="hearts">♡ ♡ ♡ ♡ ♡</div>
+      </div>
+
+      <div class="letter-right">
+        <h2>Happy Valentine’s Day</h2>
+
+        <p class="handwritten">
+          Dear Pookie,<br><br>
+           I want you to know how much you mean to me and how special you are. And I don't need any special day to tell you that.
+          <br><br>
+           Every moment with you feels surreal to me. 
+           Your morning texts light up my days. And your pretty brown eyes, I could get lost in them for hours. 
+           And your cutuu smilee. I wish to see them everyday. 
+           I annoy you so much sometimes, still you listen to me patiently. 
+           Our movie nights are the best time of my entire day. 
+           You're so respectful and considerate to me caring about my comfort and likes and dislikes. 
+           The way you talk. Actually, the way you everythinggg. 
+           And my fav, you talking about your fav movies and actors.<br><br>
+           There is so much I am not mentioning here. 
+           But, you are my fav person.And you are soo niceee.
+           And I just wish you could see yourself from my eyes and see how special you are. 
+           You mean the world to me baby. I lovee youuuu soo much. And you are the besttttesttt.<br><br>
+            <br><br>
+        </p>
+
+        <p class="signature">— With Love, Somya</p>
+      </div>
+    </div>
+    <button class="main-btn" id="seeMoreBtn">
+      click to see more →
+    </button>
+
+
+    <p class="click-more">click to see more</p>
+
+  </div>
+</section>
+
+  <!-- Music -->
+    <!-- Option 1: Local music file -->
+    <!-- <audio controls>
+      <source src="music/song.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <!-- Option 2: Spotify embed -->
+    <section id="music" class="section">
+  <h2>Now this song reminds me of youu 🎶</h2>
+
+  <div class="cassette-player" onclick="playSpotify()">
+    <div class="cassette">
+      <div class="reel left"></div>
+      <div class="reel right"></div>
+      <div class="label">PLAY ME</div>
+    </div>
+  </div>
+
+  <!-- Spotify loads here AFTER click -->
+  <div id="spotify-container"></div>
+  
+
+</section>
+
+  <!-- Photos -->
+  <section id="photos" class="section">
+    <h2>First Adventuree Together📷</h2>
+
+    <div class="gallery">
+      <img src="images/adventure.jpeg" alt="memory">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
